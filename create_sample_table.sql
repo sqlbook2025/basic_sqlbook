@@ -10,12 +10,12 @@ use sample_db;
 ----------------------------------------------------   
 CREATE TABLE User (
     user_id   CHAR(8)          NOT NULL  PRIMARY KEY,  -- 사용자 ID
-    user_nm   VARCHAR(255)     NOT NULL,                 -- 이름
-    age       SMALLINT ,                                            -- 나이
-    email     VARCHAR(255)     UNIQUE,                     -- 이메일 주소
-    phone     VARCHAR(50),                                      -- 전화번호
-    addr      VARCHAR(20),                                       --  주소 (서울, 부산등 도시만 입력)
-    join_date DATE                                                  -- 가입 날짜
+    user_nm   VARCHAR(255)     NOT NULL,               -- 이름
+    age       SMALLINT ,                               -- 나이
+    email     VARCHAR(255)     UNIQUE,                 -- 이메일 주소
+    phone     VARCHAR(50),                             -- 전화번호
+    addr      VARCHAR(20),                             --  주소 (서울, 부산등 도시만 입력)
+    join_date DATE                                     -- 가입 날짜
 ) ;
 
 -- 숙소 정보 테이블 
