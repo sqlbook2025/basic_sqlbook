@@ -125,4 +125,3 @@ CREATE TABLE orderitem (
 ) ;   
 
 
-COMMIT;
