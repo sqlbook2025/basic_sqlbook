@@ -52,7 +52,7 @@ CREATE TABLE orderitem (
   CUST_NO varchar(4) DEFAULT NULL,
   order_date date DEFAULT NULL,
   order_qty int DEFAULT NULL,
-  total_amount int DEFAULT NULL,
+  order_amount int DEFAULT NULL,
   order_status varchar(50) DEFAULT NULL,
   PRIMARY KEY (order_id)
 )  ;
@@ -124,7 +124,7 @@ INSERT INTO Customer (CUST_NO, CUST_name, birthday, gender, regdate, status , ar
 ----------------------------------------------------- 
 -- 주문 테이블 데이터 생성
 -----------------------------------------------------   
-INSERT INTO OrderItem (order_id, product_id, CUST_NO, order_date, order_qty, total_amount, order_status) VALUES
+INSERT INTO OrderItem (order_id, product_id, CUST_NO, order_date, order_qty, order_amount, order_status) VALUES
 (1,'P001','U001','2024-01-01',2,160000,'배송중'),
 (2,'P002','U002','2024-01-02',1,130000,'처리중'),
 (3,'P003','U003','2024-01-13',3,48000,'배송완료'),
