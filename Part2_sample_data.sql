@@ -46,17 +46,6 @@ use sample_db;
 TRUNCATE TABLE user;
 TRUNCATE TABLE reservations;
 TRUNCATE TABLE stay;
-TRUNCATE TABLE 메뉴;
-TRUNCATE TABLE 매장;
-TRUNCATE TABLE 고객;
-TRUNCATE TABLE 주문;
-TRUNCATE TABLE 결제;
-TRUNCATE TABLE category;
-TRUNCATE TABLE customer;
-TRUNCATE TABLE orderitem;
-TRUNCATE TABLE product;
-TRUNCATE TABLE orderitem;
-TRUNCATE TABLE product;
 
 ----------------------------------------------------   
 -- [Part2] 테이블 및 데이터 생성
