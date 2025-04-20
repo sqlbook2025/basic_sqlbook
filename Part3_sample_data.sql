@@ -3,6 +3,12 @@
 -----------------------------------------------------  
 use sample_db;
 
+TRUNCATE TABLE 메뉴;
+TRUNCATE TABLE 매장;
+TRUNCATE TABLE 고객;
+TRUNCATE TABLE 주문;
+TRUNCATE TABLE 결제;
+
 CREATE TABLE 메뉴 (
     메뉴명 VARCHAR(100) NOT NULL,
     추천구분 VARCHAR(10), 
