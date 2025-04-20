@@ -3,13 +3,6 @@
 -----------------------------------------------------  
 use sample_db;
 
--- TRUNCATE TABLE category;
--- TRUNCATE TABLE customer;
--- TRUNCATE TABLE orderitem;
--- TRUNCATE TABLE product;
--- TRUNCATE TABLE orderitem;
--- TRUNCATE TABLE product;
-
 -- 제품 테이블
 CREATE TABLE product (
   product_id varchar(4) NOT NULL,
@@ -63,6 +56,16 @@ CREATE TABLE orderitem (
   order_status varchar(50) DEFAULT NULL,
   PRIMARY KEY (order_id)
 )  ;
+
+----------------------------------------------------
+-- 테이블 데이터 지우기
+----------------------------------------------------
+TRUNCATE TABLE category;
+TRUNCATE TABLE customer;
+TRUNCATE TABLE orderitem;
+TRUNCATE TABLE product;
+TRUNCATE TABLE orderitem;
+TRUNCATE TABLE product;
 
 ----------------------------------------------------
 -- 제품 테이블 데이터 생성
