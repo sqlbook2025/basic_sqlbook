@@ -3,6 +3,13 @@
 -----------------------------------------------------  
 use sample_db;
 
+-- TRUNCATE TABLE category;
+-- TRUNCATE TABLE customer;
+-- TRUNCATE TABLE orderitem;
+-- TRUNCATE TABLE product;
+-- TRUNCATE TABLE orderitem;
+-- TRUNCATE TABLE product;
+
 -- 제품 테이블
 CREATE TABLE product (
   product_id varchar(4) NOT NULL,
