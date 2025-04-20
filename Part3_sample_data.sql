@@ -3,12 +3,6 @@
 -----------------------------------------------------  
 use sample_db;
 
--- TRUNCATE TABLE 메뉴;
--- TRUNCATE TABLE 매장;
--- TRUNCATE TABLE 고객;
--- TRUNCATE TABLE 주문;
--- TRUNCATE TABLE 결제;
-
 CREATE TABLE 메뉴 (
     메뉴명 VARCHAR(100) NOT NULL,
     추천구분 VARCHAR(10), 
@@ -43,6 +37,13 @@ CREATE TABLE 결제 (
     결제방법 VARCHAR(45) NOT NULL,
     PRIMARY KEY (결제ID)
 );
+
+-- 모든 테이블의 데이터 지우기
+TRUNCATE TABLE 메뉴;
+TRUNCATE TABLE 매장;
+TRUNCATE TABLE 고객;
+TRUNCATE TABLE 주문;
+TRUNCATE TABLE 결제;
 
 -- 고객 테이블 데이터 생성
 INSERT INTO 고객 (고객ID, 고객명, 나이, 지역) VALUES
