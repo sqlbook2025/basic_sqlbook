@@ -40,8 +40,6 @@ CREATE TABLE Reservations (
 -- 전체 실습용 데이터 생성
 -----------------------------------------------------  
 
-use sample_db;
-
 -- 모든 테이블의 데이터 지우기
 TRUNCATE TABLE user;
 TRUNCATE TABLE reservations;
